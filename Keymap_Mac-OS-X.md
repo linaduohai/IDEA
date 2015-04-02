@@ -89,6 +89,135 @@ Smart line join
 ⌘ ↩
 Smart line split
 只能行分解
+⇧ ↩
+Start new line
+开始新的一行
+⌘ ⇧ U
+Toggle case for word at caret or selected block
+对插入符处的词或选中的块切换大小写
+⌘ ⇧ ], ⌘ ⇧ [*
+Select till code block end/start
+
+⌥ ⌦*
+Delete to word end
+删除到词尾
+⌥ ⌫*
+Delete to word start
+删除到词头
+
+⌘ +, ⌘ -
+Expand/collapse code block
+展开后折叠代码块
+⌘ ⇧ +
+Expand all
+全部展开
+⌘ ⇧ -
+Collapse all
+全部折叠
+⌘ W
+Close active editor tab
+关闭当前编辑标签页
+
+Search/Replace
+
+Double ⇧
+Search everywhere
+全局搜索
+⌘ F
+Find
+查找
+⌘ G
+Find next
+查找下一个
+⌘ ⇧ G
+Find previous
+查找上一个
+⌘ R
+Replace
+替换
+⌘ ⇧ F
+Find in path
+在路径中查找
+⌘ ⇧ R
+Replace in path
+在路径中替换
+⌘ ⇧ S*
+Search structurally (Ultimate Edition only)
+结构化搜索（限于Ultimate版）
+⌘ ⇧ M*
+Replace structurally (Ultimate Edition only)
+结构化替换（限于Ultimate版）
+
+Usage Search
+
+⌥ F7 /  ⌘ F7*
+Find usages / Find usages in file
+查找使用或在文件中查找使用
+⌘ ⇧ F7*
+Highlight usages in file
+在文件中高亮使用处
+⌘ ⌥ F7
+Show usages
+显示使用处
+
+Compile and Run
+
+⌘ F9
+Make project (compile modified and dependent)
+编译项目（被更改的和依赖）
+⌘ ⇧ F9
+Compile selected file, package or module
+编译选中的文件或包或模块
+⌃ ⌥ R
+Select configuration and run
+选择配置并运行
+⌃ ⌥ D
+Select configuration and debug
+选择配置并调试
+⌃ R
+Run
+运行
+⌃ D
+Debug
+调试
+⌃ ⇧ R, ⌃ ⇧ D
+Run context configuration from editor
+运行或调试当前编辑窗口的配置
+
+Debugging
+
+F8
+Step over
+
+F7
+Step into
+
+⇧ F7
+Smart step into
+
+⇧ F8
+Step out
+
+⌥ F9
+Run to cursor
+
+⌥ F8
+Evaluate expression
+
+⌘ ⌥ R
+Resume program
+
+⌘ F8
+Toggle breakpoint
+
+⌘ ⇧ F8
+View breakpoints
+
+
+
+
+
+
 
 
 
