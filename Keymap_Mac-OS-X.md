@@ -214,6 +214,45 @@ Toggle breakpoint
 View breakpoints
 
 
+Navigation
+
+⌘ O
+Go to class
+⌘ ⇧ O
+Go to file
+⌘ ⌥ O
+Go to symbol
+⌃ ←, ⌃ →
+Go to next/previous editor tab
+F12
+Go back to previous tool window
+Go to editor (from tool window)
+Hide active or last active window
+Close active run/messages/find/... tab
+Go to line
+Recent files popup
+Navigate back/forward
+Navigate to last edit location
+Select current file or symbol in any view
+Go to declaration
+Go to implementation(s)
+Open quick definition lookup
+Go to type declaration
+Go to super-method/super-class
+Go to previous/next method
+Move to code block end/start
+File structure popup
+Type hierarchy
+Method hierarchy
+Call hierarchy
+Next/previous highlighted error
+Edit source / View source
+Show navigation bar
+Toggle bookmark
+Toggle bookmark with mnemonic
+Go to numbered bookmark
+Show bookmarks
+
 
 
 
