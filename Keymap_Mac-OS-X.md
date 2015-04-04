@@ -1,3 +1,5 @@
+IntelliJ IDEA Mac OS X Keymap
+
 Editing
 
 ⌃ Space
@@ -226,32 +228,128 @@ Go to symbol
 Go to next/previous editor tab
 F12
 Go back to previous tool window
+⎋
 Go to editor (from tool window)
+⇧ ⎋
 Hide active or last active window
+⌘ ⇧ F4
 Close active run/messages/find/... tab
+⌘ L
 Go to line
+⌘ E
 Recent files popup
+⌘ ⌥ ←, ⌘ ⌥ →
 Navigate back/forward
+⌘ ⇧ ⌫
 Navigate to last edit location
+⌥ F1
 Select current file or symbol in any view
+⌘ B or ⌘ 
 Go to declaration
+⌘ ⌥ B
 Go to implementation(s)
+⌥ Space, ⌘ Y
 Open quick definition lookup
+⌃ ⇧ B
 Go to type declaration
+⌘ U
 Go to super-method/super-class
+⌃ ↑, ⌃ ↓
 Go to previous/next method
+⌘ ], ⌘ [
 Move to code block end/start
+⌘ F12
 File structure popup
+⌃ H
 Type hierarchy
+⌘ ⇧ H
 Method hierarchy
+⌃ ⌥ H
 Call hierarchy
+F2, ⇧ F12
 Next/previous highlighted error
+F4 / ⌘ ↓
 Edit source / View source
+⌘ Home
 Show navigation bar
+F3
 Toggle bookmark
+⌥ F3
 Toggle bookmark with mnemonic
+⌃ 0 ... ⌃ 9
 Go to numbered bookmark
+⌘ F3
 Show bookmarks
+
+Refactoring
+
+F5
+Copy
+F6
+Move
+⌘ Delete
+Safe Delete
+⇧ F6
+Rename
+⌘ F6
+Change Signature
+⌘ ⌥ N
+Inline
+⌘ ⌥ M
+Extract Method
+⌘ ⌥ V
+Extract Variable
+⌘ ⌥ F
+Extract Field
+⌘ ⌥ C
+Extract Constant
+⌘ ⌥ P
+Extract Parameter
+
+VCS/Local History
+
+⌘ K
+Commit project to VCS
+⌘ T
+Update project from VCS
+⌥ ⇧ C
+View recent changes
+⌃ V
+‘VCS’ quick popup
+
+Live Templates
+
+⌘ ⌥ J
+Surround with Live Template
+⌘ J
+Insert Live Template
+
+General
+
+⌘ 0 ... ⌘ 9
+Open corresponding tool window
+⌘ S
+Save all
+⌘ ⌥ Y
+Synchronize
+⌃ ⌘ F
+Toggle full screen mode
+⌘ ⇧ F12
+Toggle maximizing editor
+⌥ ⇧ F
+Add to Favorites
+⌥ ⇧ I
+Inspect current file with current profile
+⌃  or ⌃ `
+Quick switch current scheme
+⌘ ,
+Open Settings dialog
+⌘ ;
+Open Project Structure dialog
+⇧ ⌘ A
+Find Action
+⌃ ⇥
+Switch between tabs and tool window
 
 
 
