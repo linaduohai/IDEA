@@ -339,126 +339,157 @@ F7
 ⌘ O
 
     Go to class
+    去向类
     
 ⌘ ⇧ O
 
     Go to file
+    去向文件
     
 ⌘ ⌥ O
 
     Go to symbol
+    去向符号
     
 ⌃ ←, ⌃ →
 
     Go to next/previous editor tab
+    去下一个或前一个编辑标签页
     
 F12
 
     Go back to previous tool window
+    回到前一个工具窗口
     
 ⎋
 
     Go to editor (from tool window)
+    去向编辑页（从工具窗口）
     
 ⇧ ⎋
 
     Hide active or last active window
+    隐藏活动窗口或最近的活动窗口
     
 ⌘ ⇧ F4
 
     Close active run/messages/find/... tab
     
+    
 ⌘ L
 
-    Go to line
+    Go to line*
+    去向行
     
 ⌘ E
 
     Recent files popup
+    弹出最近打开的文件
     
 ⌘ ⌥ ←, ⌘ ⌥ →
 
     Navigate back/forward
+    向后或向前导航
     
 ⌘ ⇧ ⌫
 
     Navigate to last edit location
+    返回最近编辑位置
     
 ⌥ F1
 
     Select current file or symbol in any view
+    在任意视图内选择当前文件或符号
     
 ⌘ B or ⌘ 
 
     Go to declaration
+    去向定义处
     
 ⌘ ⌥ B
 
     Go to implementation(s)
+    去向实现处
     
 ⌥ Space, ⌘ Y
 
     Open quick definition lookup
+    打开快速定义*
     
 ⌃ ⇧ B
 
     Go to type declaration
+    去向类定义
     
 ⌘ U
 
     Go to super-method/super-class
+    去向父方法或父类
     
 ⌃ ↑, ⌃ ↓
 
     Go to previous/next method
+    去向前一个或下一个方法
     
 ⌘ ], ⌘ [
 
     Move to code block end/start
+    移动到代码块结尾或开头
     
 ⌘ F12
    
     File structure popup
+    弹出文件结构
     
 ⌃ H
 
     Type hierarchy
+    类层次结构
     
 ⌘ ⇧ H
 
     Method hierarchy
+    方法层次结构
     
 ⌃ ⌥ H   
 
     Call hierarchy
+    调用层次结构
     
 F2, ⇧ F12
 
     Next/previous highlighted error
+    下一个或前一个高亮错误处
     
 F4 / ⌘ ↓
 
     Edit source / View source
+    编辑源或查看源
     
 ⌘ Home
 
     Show navigation bar
+    显示导航栏
     
 F3
 
     Toggle bookmark
+    切换书签
     
 ⌥ F3
 
     Toggle bookmark with mnemonic
+    *
     
 ⌃ 0 ... ⌃ 9
 
     Go to numbered bookmark
+    *
     
 ⌘ F3
 
     Show bookmarks
+    显示书签
     
 
 #Refactoring 重构
