@@ -497,87 +497,103 @@ F3
 F5
 
     Copy
+    复制
     
 F6
 
     Move
+    移动
     
 ⌘ Delete
 
     Safe Delete
+    安全删除*
     
 ⇧ F6
 
     Rename
+    重命名
     
 ⌘ F6
 
     Change Signature
+    *
     
 ⌘ ⌥ N
 
     Inline
+    *
     
 ⌘ ⌥ M
 
     Extract Method
+    抽取方法
     
 ⌘ ⌥ V
 
     Extract Variable
+    抽取变量
     
 ⌘ ⌥ F
 
     Extract Field
+    抽取域
     
 ⌘ ⌥ C
 
     Extract Constant
+    抽取常量
     
 ⌘ ⌥ P
 
     Extract Parameter
-    
+    抽取参数
 
 #VCS/Local History 版本控制系统或本地历史
 
 ⌘ K
 
     Commit project to VCS
+    提交项目到VCS
     
 ⌘ T
 
     Update project from VCS
+    从VSC更新项目
     
 ⌥ ⇧ C
 
     View recent changes
+    查看最近的修改
     
 ⌃ V
 
     ‘VCS’ quick popup
-    
+    弹出VCS操作菜单
 
 #Live Templates 活动模板*
 
 ⌘ ⌥ J
 
     Surround with Live Template
+    用动态模板环绕
     
 ⌘ J
 
     Insert Live Template
-    
+    插入动态模板
 
 #General 通用*
 
 ⌘ 0 ... ⌘ 9
 
     Open corresponding tool window
+    打开相应的工具窗口
     
 ⌘ S
 
     Save all
+    全部保存
     
 ⌘ ⌥ Y
 
@@ -586,36 +602,45 @@ F6
 ⌃ ⌘ F
 
     Toggle full screen mode
+    切换全屏模式
     
 ⌘ ⇧ F12
 
     Toggle maximizing editor
+    切换编辑窗口最大化
     
 ⌥ ⇧ F
 
     Add to Favorites
+    添加到收藏夹
     
 ⌥ ⇧ I
 
     Inspect current file with current profile
+    用当前属性对当前文件进行检查
     
 ⌃  or ⌃ `
 
     Quick switch current scheme
+    快速转换当前主题
     
 ⌘ ,
 
     Open Settings dialog
+    打开设置对话框
     
 ⌘ ;
 
     Open Project Structure dialog
+    打开项目结构对话框
     
 ⇧ ⌘ A
 
     Find Action
+    快捷查询
     
 ⌃ ⇥
 
     Switch between tabs and tool window
+    标签和工具窗口转换
     
