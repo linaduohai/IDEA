@@ -1,63 +1,67 @@
 \documentclass[a4paper]{article}
 \usepackage[landscape]{geometry}
-\geometry{left=1cm,right=1cm,top=1cm,bottom=1cm}
-\usepackage{fontspec, xunicode, xltxtra}
-\usepackage{multirow}
+\usepackage{fontspec, xunicode, xltxtra}  
 \usepackage{xcolor, colortbl}
+\usepackage{multirow}
+\usepackage{graphicx}
 \usepackage{array}
-\setmainfont{Hiragino Sans GB}
+\usepackage{mwe}
+\geometry{left=1.5cm,right=1cm,top=1cm,bottom=1cm}
+\graphicspath{ {images/} }
+\setmainfont{Hiragino Sans GB} 
 \definecolor{bg}{HTML}{d6ddec}
 \definecolor{l1}{HTML}{00407c}
 \definecolor{l2}{HTML}{818386}
 \definecolor{title}{HTML}{00407c}
-\newcolumntype{a}{>{\columncolor{bg}}c}
-\newcolumntype{b}{>{\columncolor{white}}c}
+\newcolumntype{a}[1]{>{\columncolor{bg}\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{b}[1]{>{\columncolor{white}\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newlength\savedwidth
-\newcommand\whline{\noalign{\global\savedwidth\arrayrulewidth
-                            \global\arrayrulewidth 2pt}%
-                   \hline
-                   \noalign{\global\arrayrulewidth\savedwidth}}
+\newcommand\whline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}\hline\noalign{\global\arrayrulewidth\savedwidth}}
+%========================================                   
 \begin{document}
-\begin{figure}[htb]
-  \begin{minipage}[b]{0.3\textwidth}
-    \centering
-
-     \color{title}IntelliJ IDEA Keymap for Max OS X\\
-     \begin{tabular}{a  b  a}
-        \multicolumn{3}{c}{\color{title}Edit 编辑}\\
-        \arrayrulecolor{l1}\whline
-        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
-        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
-        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
+\begin{figure}[htb] 
+%----------------------------------------
+  \begin{minipage}[b]{0.33\textwidth} 
+    \begin{flushleft}
+     \begin{tabular}{ll}
+     \color{title}IntelliJ IDEA Keymap for Max OS X & \raisebox{-.35\height}{\includegraphics[scale=0.2]{mac}}\\
      \end{tabular}
-
-  \end{minipage}%
-  \begin{minipage}[b]{0.3\textwidth}
-    \centering
-
-     \color{title}IntelliJ IDEA Keymap for Max OS X\\
-     \begin{tabular}{a  b  a}
-        \multicolumn{3}{c}{\color{title}Edit 编辑}\\
+     \begin{tabular}{a{2cm} b{5cm}}
+        \multicolumn{2}{c}{\color{title} Edit 编辑}\\
         \arrayrulecolor{l1}\whline
-        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
-        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
-        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
+        Ctrl Space & Basic code completion (the name of any class, method or variable)\\ \arrayrulecolor{l2}\hline
+        1 & 2\\ \arrayrulecolor{l2}\hline
      \end{tabular}
-
-  \end{minipage}%
-  \begin{minipage}[b]{0.3\textwidth}
-    \centering
-
-     \color{title}IntelliJ IDEA Keymap for Max OS X\\
-     \begin{tabular}{a  b  a}
-        \multicolumn{3}{c}{\color{title}Edit 编辑}\\
-        \arrayrulecolor{l1}\whline
-        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
-        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
-        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
-     \end{tabular}
-
+   \end{flushleft}
   \end{minipage}
+%----------------------------------------
+  \begin{minipage}[b]{0.33\textwidth} 
+     \begin{flushleft}
+     \begin{tabular}{ll}
+     \color{title}IntelliJ IDEA Keymap for Max OS X & \raisebox{-.35\height}{\includegraphics[scale=0.2]{mac}}\\
+     \end{tabular}
+     \begin{tabular}{a{2cm} b{5cm}}
+        \multicolumn{2}{c}{\color{title}Edit 编辑}\\
+        \arrayrulecolor{l1}\whline
+        Ctrl Space & Basic code completion (the name of any class, method or variable)\\ \arrayrulecolor{l2}\hline
+        1 & 2\\ \arrayrulecolor{l2}\hline
+     \end{tabular}
+   \end{flushleft}   
+  \end{minipage}
+%----------------------------------------
+  \begin{minipage}[b]{0.33\textwidth} 
+    \begin{flushleft}
+     \begin{tabular}{ll}
+     \color{title}IntelliJ IDEA Keymap for Max OS X & \raisebox{-.35\height}{\includegraphics[scale=0.2]{mac}}\\
+     \end{tabular}
+     \begin{tabular}{a{2cm} b{5cm}}
+        \multicolumn{2}{c}{\color{title}Edit 编辑}\\
+        \arrayrulecolor{l1}\whline
+        Ctrl Space & Basic code completion (the name of any class, method or variable)\\ \arrayrulecolor{l2}\hline
+        1 & 2\\ \arrayrulecolor{l2}\hline
+     \end{tabular}
+   \end{flushleft}
+  \end{minipage} 
+%----------------------------------------
 \end{figure}
-
 \end{document}
