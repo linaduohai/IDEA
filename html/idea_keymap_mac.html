@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>IDEA Keymap for Mac OS X</title>
+    <style>
+        @import "css/style.css";
+    </style>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/style.js"></script>
+</head>
+<body>
+<h1>IntelliJ IDEA Mac OS X Keymap<img src="data:image/png;base64,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" alt="Mac"/></h1>
+<table>
+    <tr>
+        <th colspan="3">Editing 编辑</th>
+    </tr>
+    <tr>
+        <td>⌃ Space</td>
+        <td>Basic code completion (the name of any class, method or variable)</td>
+        <td>基本代码补齐（在任意类、方法、变量名上）</td>
+    </tr>
+    <tr>
+        <td>⌃ ⇧ Space<b>*</b></td>
+        <td>Smart code completion (filters the list of methods and variables by expected type)</td>
+        <td>智能代码补齐（通过类型过滤的方法和变量名列表）</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ ↩</td>
+        <td>Complete statement</td>
+        <td>完成语句</td>
+    </tr>
+    <tr>
+        <td>⌘ P</td>
+        <td>Parameter info (within method call arguments)</td>
+        <td>参数信息（在方法调用参数处）</td>
+    </tr>
+    <tr>
+        <td>⌃ J or Mid. button click</td>
+        <td>Quick documentation lookup</td>
+        <td>快速查看文档</td>
+    </tr>
+    <tr>
+        <td>⇧ F1</td>
+        <td>External Doc</td>
+        <td>外部文档</td>
+    </tr>
+    <tr>
+        <td>⌘ + mouse over code</td>
+        <td>Brief Info</td>
+        <td>简洁信息</td>
+    </tr>
+    <tr>
+        <td>⌘ F1</td>
+        <td>Show descriptions of error or warning at caret</td>
+        <td>显示插入符号处的错误或警告描述信息</td>
+    </tr>
+    <tr>
+        <td>⌘ N, ⌃ ↩, ⌃ N</td>
+        <td>Generate code... (Getters, Setters, Constructors, hashCode/equals, toString)</td>
+        <td>生成代码... （Get方法，Set方法， 构造方法， hashCode/equals, toString）</td>
+    </tr>
+    <tr>
+        <td>⌃ O</td>
+        <td>Override methods</td>
+        <td>重写（覆盖）方法</td>
+    </tr>
+    <tr>
+        <td>⌃ I</td>
+        <td>Implement methods</td>
+        <td>实现方法</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ T</td>
+        <td>Surround with... (if..else, try..catch, for, synchronized, etc.)</td>
+        <td>用...环绕代码（if..else，try..catch，for，synchronized，等）</td>
+    </tr>
+    <tr>
+        <td>⌘ /</td>
+        <td>Comment/uncomment with line comment</td>
+        <td>添加或取消单行注释</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ /</td>
+        <td>Comment/uncomment with block comment</td>
+        <td>添加或取消块注释</td>
+    </tr>
+    <tr>
+        <td>⌥ ↑</td>
+        <td>Select successively increasing code blocks</td>
+        <td>增量选择</td>
+    </tr>
+    <tr>
+        <td>⌥ ↓</td>
+        <td>Decrease current selection to previous state</td>
+        <td>减量选择</td>
+    </tr>
+    <tr>
+        <td>⌃ ⇧ Q<b>*</b></td>
+        <td>Context info</td>
+        <td><b>*</b></td>
+    </tr>
+    <tr>
+        <td>⌥ ↩</td>
+        <td>Show intention actions and quick-fixes</td>
+        <td>显示意向操作及快速修复</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ L</td>
+        <td>Reformat code</td>
+        <td>代码格式化</td>
+    </tr>
+    <tr>
+        <td>⌃ ⌥ O</td>
+        <td>Optimize imports</td>
+        <td>优化导包语句</td>
+    </tr>
+    <tr>
+        <td>⌃ ⌥ I<b>*</b></td>
+        <td>Auto-indent line(s)</td>
+        <td><b>*</b></td>
+    </tr>
+    <tr>
+        <td>⇥, ⇧ ⇥</td>
+        <td>Indent/unindent selected lines</td>
+        <td>对选中行缩进或反缩进</td>
+    </tr>
+    <tr>
+        <td>⌘ X</td>
+        <td>Cut current line or selected block to clipboard</td>
+        <td>剪切当前行或选中的代码块</td>
+    </tr>
+    <tr>
+        <td>⌘ C</td>
+        <td>Copy current line or selected block to clipboard</td>
+        <td>复制当前行或选中的代码块</td>
+    </tr>
+    <tr>
+        <td>⌘ V</td>
+        <td>Paste from clipboard</td>
+        <td>从剪贴板粘贴</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ V</td>
+        <td>Paste from recent buffers...</td>
+        <td>从近期缓冲区粘贴</td>
+    </tr>
+    <tr>
+        <td>⌘ D</td>
+        <td>Duplicate current line or selected block</td>
+        <td>复制当前行或选中的代码块</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌫</td>
+        <td>Delete line at caret</td>
+        <td>删除插入符所在的行</td>
+    </tr>
+    <tr>
+        <td>⌃ ⇧ J</td>
+        <td>Smart line join</td>
+        <td>智能行合并</td>
+    </tr>
+    <tr>
+        <td>⌘ ↩</td>
+        <td>Smart line split</td>
+        <td>智能行分解</td>
+    </tr>
+    <tr>
+        <td>⇧ ↩</td>
+        <td>Start new line</td>
+        <td>开始新的一行</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ U</td>
+        <td>Toggle case for word at caret or selected block</td>
+        <td>对插入符处的词或选中的块切换大小写</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ ], ⌘ ⇧ [<b>*</b></td>
+        <td>Select till code block end/start</td>
+        <td><b>*</b></td>
+    </tr>
+    <tr>
+        <td>⌥ ⌦<b>*</b></td>
+        <td>Delete to word end</td>
+        <td>删除到词尾</td>
+    </tr>
+    <tr>
+        <td>⌥ ⌫<b>*</b></td>
+        <td>Delete to word start</td>
+        <td>删除到词头</td>
+    </tr>
+    <tr>
+        <td>⌘ +, ⌘ -</td>
+        <td>Expand/collapse code block</td>
+        <td>展开后折叠代码块</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ +</td>
+        <td>Expand all</td>
+        <td>全部展开</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ -</td>
+        <td>Collapse all</td>
+        <td>全部折叠</td>
+    </tr>
+    <tr>
+        <td>⌘ W</td>
+        <td>Close active editor tab</td>
+        <td>关闭当前编辑标签页</td>
+    </tr>
+    <tr>
+        <th colspan="3">Search/Replace 搜索或替换</th>
+    </tr>
+    <tr>
+        <td>Double ⇧</td>
+        <td>Search everywhere</td>
+        <td>全局搜索</td>
+    </tr>
+    <tr>
+        <td>⌘ F</td>
+        <td>Find</td>
+        <td>查找</td>
+    </tr>
+    <tr>
+        <td>⌘ G</td>
+        <td>Find next</td>
+        <td>查找下一个</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ G</td>
+        <td>Find previous</td>
+        <td>查找上一个</td>
+    </tr>
+    <tr>
+        <td>⌘ R</td>
+        <td>Replace</td>
+        <td>替换</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ F</td>
+        <td>Find in path</td>
+        <td>在路径中查找</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ R</td>
+        <td>Replace in path</td>
+        <td>在路径中替换</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ S<b>*</b></td>
+        <td>Search structurally (Ultimate Edition only)</td>
+        <td>结构化搜索（限于Ultimate版）</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ M<b>*</b></td>
+        <td>Replace structurally (Ultimate Edition only)</td>
+        <td>结构化替换（限于Ultimate版）</td>
+    </tr>
+    <tr>
+        <th colspan="3">Usage Search 使用搜索</th>
+    </tr>
+    <tr>
+        <td>⌥ F7 / ⌘ F7<b>*</b></td>
+        <td>Find usages / Find usages in file</td>
+        <td>查找使用或在文件中查找使用</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ F7<b>*</b></td>
+        <td>Highlight usages in file</td>
+        <td>在文件中高亮使用处</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ F7</td>
+        <td>Show usages</td>
+        <td>显示使用处</td>
+    </tr>
+    <tr>
+        <th colspan="3">Compile and Run 编译和运行</th>
+    </tr>
+    <tr>
+        <td>⌘ F9</td>
+        <td>Make project (compile modified and dependent)</td>
+        <td>编译项目（被更改的和依赖）</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ F9</td>
+        <td>Compile selected file, package or module</td>
+        <td>编译选中的文件或包或模块</td>
+    </tr>
+    <tr>
+        <td>⌃ ⌥ R</td>
+        <td>Select configuration and run</td>
+        <td>选择配置并运行</td>
+    </tr>
+    <tr>
+        <td>⌃ ⌥ D</td>
+        <td>Select configuration and debug</td>
+        <td>选择配置并调试</td>
+    </tr>
+    <tr>
+        <td>⌃ R</td>
+        <td>Run</td>
+        <td>运行</td>
+    </tr>
+    <tr>
+        <td>⌃ D</td>
+        <td>Debug</td>
+        <td>调试</td>
+    </tr>
+    <tr>
+        <td>⌃ ⇧ R, ⌃ ⇧ D</td>
+        <td>Run context configuration from editor</td>
+        <td>运行或调试当前编辑窗口的配置</td>
+    </tr>
+    <tr>
+        <th colspan="3">Debugging 调试<b>*</b></th>
+    </tr>
+    <tr>
+        <td>F8</td>
+        <td>Step over</td>
+        <td>步过</td>
+    </tr>
+    <tr>
+        <td>F7</td>
+        <td>Step into</td>
+        <td>步入</td>
+    </tr>
+    <tr>
+        <td>⇧ F7</td>
+        <td>Smart step into</td>
+        <td>智能步入</td>
+    </tr>
+    <tr>
+        <td>⇧ F8</td>
+        <td>Step out</td>
+        <td>步出</td>
+    </tr>
+    <tr>
+        <td>⌥ F9</td>
+        <td>Run to cursor</td>
+        <td>运行至光标处</td>
+    </tr>
+    <tr>
+        <td>⌥ F8</td>
+        <td>Evaluate expression</td>
+        <td><b>*</b></td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ R</td>
+        <td>Resume program</td>
+        <td>重新开始程序</td>
+    </tr>
+    <tr>
+        <td>⌘ F8</td>
+        <td>Toggle breakpoint</td>
+        <td>切换断点</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ F8</td>
+        <td>View breakpoints</td>
+        <td>查看断点</td>
+    </tr>
+    <tr>
+        <th colspan="3">Navigation 导航</th>
+    </tr>
+    <tr>
+        <td>⌘ O</td>
+        <td>Go to class</td>
+        <td>去向类</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ O</td>
+        <td>Go to file</td>
+        <td>去向文件</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ O</td>
+        <td>Go to symbol</td>
+        <td>去向符号</td>
+    </tr>
+    <tr>
+        <td>⌃ ←, ⌃ →</td>
+        <td>Go to next/previous editor tab</td>
+        <td>去下一个或前一个编辑标签页</td>
+    </tr>
+    <tr>
+        <td>F12</td>
+        <td>Go back to previous tool window</td>
+        <td>回到前一个工具窗口</td>
+    </tr>
+    <tr>
+        <td>⎋</td>
+        <td>Go to editor (from tool window)</td>
+        <td>去向编辑页（从工具窗口）</td>
+    </tr>
+    <tr>
+        <td>⇧ ⎋</td>
+        <td>Hide active or last active window</td>
+        <td>隐藏活动窗口或最近的活动窗口</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ F4</td>
+        <td>Close active run/messages/find/... tab</td>
+        <td><b>*</b></td>
+    </tr>
+    <tr>
+        <td>⌘ L</td>
+        <td>Go to line<b>*</b></td>
+        <td>去向行</td>
+    </tr>
+    <tr>
+        <td>⌘ E</td>
+        <td>Recent files popup</td>
+        <td>弹出最近打开的文件</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ ←, ⌘ ⌥ →</td>
+        <td>Navigate back/forward</td>
+        <td>向后或向前导航</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ ⌫</td>
+        <td>Navigate to last edit location</td>
+        <td>返回最近编辑位置</td>
+    </tr>
+    <tr>
+        <td>⌥ F1</td>
+        <td>Select current file or symbol in any view</td>
+        <td>在任意视图内选择当前文件或符号</td>
+    </tr>
+    <tr>
+        <td>⌘ B or ⌘ </td>
+        <td>Go to declaration</td>
+        <td>去向定义处</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ B</td>
+        <td>Go to implementation(s)</td>
+        <td>去向实现处</td>
+    </tr>
+    <tr>
+        <td>⌥ Space, ⌘ Y</td>
+        <td>Open quick definition lookup</td>
+        <td>打开快速定义<b>*</b></td>
+    </tr>
+    <tr>
+        <td>⌃ ⇧ B</td>
+        <td>Go to type declaration</td>
+        <td>去向类定义</td>
+    </tr>
+    <tr>
+        <td>⌘ U</td>
+        <td>Go to super-method/super-class</td>
+        <td>去向父方法或父类</td>
+    </tr>
+    <tr>
+        <td>⌃ ↑, ⌃ ↓</td>
+        <td>Go to previous/next method</td>
+        <td>去向前一个或下一个方法</td>
+    </tr>
+    <tr>
+        <td>⌘ ], ⌘ [</td>
+        <td>Move to code block end/start</td>
+        <td>移动到代码块结尾或开头</td>
+    </tr>
+    <tr>
+        <td>⌘ F12</td>
+        <td>File structure popup</td>
+        <td>弹出文件结构</td>
+    </tr>
+    <tr>
+        <td>⌃ H</td>
+        <td>Type hierarchy</td>
+        <td>类层次结构</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ H</td>
+        <td>Method hierarchy</td>
+        <td>方法层次结构</td>
+    </tr>
+    <tr>
+        <td>⌃ ⌥ H</td>
+        <td>Call hierarchy</td>
+        <td>调用层次结构</td>
+    </tr>
+    <tr>
+        <td>F2, ⇧ F2</td>
+        <td>Next/previous highlighted error</td>
+        <td>下一个或前一个高亮错误处</td>
+    </tr>
+    <tr>
+        <td>F4 / ⌘ ↓</td>
+        <td>Edit source / View source</td>
+        <td>编辑源或查看源</td>
+    </tr>
+    <tr>
+        <td>⌘ Home</td>
+        <td>Show navigation bar</td>
+        <td>显示导航栏</td>
+    </tr>
+    <tr>
+        <td>F3</td>
+        <td>Toggle bookmark</td>
+        <td>切换书签</td>
+    </tr>
+    <tr>
+        <td>⌥ F3</td>
+        <td>Toggle bookmark with mnemonic</td>
+        <td><b>*</b></td>
+    </tr>
+    <tr>
+        <td>⌃ 0 ... ⌃ 9</td>
+        <td>Go to numbered bookmark</td>
+        <td><b>*</b></td>
+    </tr>
+    <tr>
+        <td>⌘ F3</td>
+        <td>Show bookmarks</td>
+        <td>显示书签</td>
+    </tr>
+    <tr>
+        <th colspan="3">Refactoring 重构</th>
+    </tr>
+    <tr>
+        <td>F5</td>
+        <td>Copy</td>
+        <td>复制</td>
+    </tr>
+    <tr>
+        <td>F6</td>
+        <td>Move</td>
+        <td>移动</td>
+    </tr>
+    <tr>
+        <td>⌘ Delete</td>
+        <td>Safe Delete</td>
+        <td>安全删除<b>*</b></td>
+    </tr>
+    <tr>
+        <td>⇧ F6</td>
+        <td>Rename</td>
+        <td>重命名</td>
+    </tr>
+    <tr>
+        <td>⌘ F6</td>
+        <td>Change Signature</td>
+        <td><b>*</b></td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ N</td>
+        <td>Inline</td>
+        <td><b>*</b></td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ M</td>
+        <td>Extract Method</td>
+        <td>抽取方法</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ V</td>
+        <td>Extract Variable</td>
+        <td>抽取变量</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ F</td>
+        <td>Extract Field</td>
+        <td>抽取域</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ C</td>
+        <td>Extract Constant</td>
+        <td>抽取常量</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ P</td>
+        <td>Extract Parameter</td>
+        <td>抽取参数</td>
+    </tr>
+    <tr>
+        <th colspan="3">VCS/Local History 版本控制系统或本地历史</th>
+    </tr>
+    <tr>
+        <td>⌘ K</td>
+        <td>Commit project to VCS</td>
+        <td>提交项目到VCS</td>
+    </tr>
+    <tr>
+        <td>⌘ T</td>
+        <td>Update project from VCS</td>
+        <td>从VSC更新项目</td>
+    </tr>
+    <tr>
+        <td>⌥ ⇧ C</td>
+        <td>View recent changes</td>
+        <td>查看最近的修改</td>
+    </tr>
+    <tr>
+        <td>⌃ V</td>
+        <td>‘VCS’ quick popup</td>
+        <td>弹出VCS操作菜单</td>
+    </tr>
+    <tr>
+        <th colspan="3">Live Templates 活动模板<b>*</b></th>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ J</td>
+        <td>Surround with Live Template</td>
+        <td>用动态模板环绕</td>
+    </tr>
+    <tr>
+        <td>⌘ J</td>
+        <td>Insert Live Template</td>
+        <td>插入动态模板</td>
+    </tr>
+    <tr>
+        <th colspan="3">General 通用<b>*</b></th>
+    </tr>
+    <tr>
+        <td>⌘ 0 ... ⌘ 9</td>
+        <td>Open corresponding tool window</td>
+        <td>打开相应的工具窗口</td>
+    </tr>
+    <tr>
+        <td>⌘ S</td>
+        <td>Save all</td>
+        <td>全部保存</td>
+    </tr>
+    <tr>
+        <td>⌘ ⌥ Y</td>
+        <td>Synchronize</td>
+        <td><b>*</b></td>
+    </tr>
+    <tr>
+        <td>⌃ ⌘ F</td>
+        <td>Toggle full screen mode</td>
+        <td>切换全屏模式</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ F12</td>
+        <td>Toggle maximizing editor</td>
+        <td>切换编辑窗口最大化</td>
+    </tr>
+    <tr>
+        <td>⌥ ⇧ F</td>
+        <td>Add to Favorites</td>
+        <td>添加到收藏夹</td>
+    </tr>
+    <tr>
+        <td>⌥ ⇧ I</td>
+        <td>Inspect current file with current profile</td>
+        <td>用当前属性对当前文件进行检查</td>
+    </tr>
+    <tr>
+        <td>⌃ or ⌃ `</td>
+        <td>Quick switch current scheme</td>
+        <td>快速转换当前主题</td>
+    </tr>
+    <tr>
+        <td>⌘ ,</td>
+        <td>Open Settings dialog</td>
+        <td>打开设置对话框</td>
+    </tr>
+    <tr>
+        <td>⌘ ;</td>
+        <td>Open Project Structure dialog</td>
+        <td>打开项目结构对话框</td>
+    </tr>
+    <tr>
+        <td>⌘ ⇧ A</td>
+        <td>Find Action</td>
+        <td>快捷查询</td>
+    </tr>
+    <tr>
+        <td>⌃ ⇥</td>
+        <td>Switch between tabs and tool window</td>
+        <td>标签和工具窗口转换</td>
+    </tr>
+</table>
+</body>
+</html>

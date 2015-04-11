@@ -1,0 +1,63 @@
+\documentclass[a4paper]{article}
+\usepackage[landscape]{geometry}
+\geometry{left=1cm,right=1cm,top=1cm,bottom=1cm}
+\usepackage{fontspec, xunicode, xltxtra}
+\usepackage{multirow}
+\usepackage{xcolor, colortbl}
+\usepackage{array}
+\setmainfont{Hiragino Sans GB}
+\definecolor{bg}{HTML}{d6ddec}
+\definecolor{l1}{HTML}{00407c}
+\definecolor{l2}{HTML}{818386}
+\definecolor{title}{HTML}{00407c}
+\newcolumntype{a}{>{\columncolor{bg}}c}
+\newcolumntype{b}{>{\columncolor{white}}c}
+\newlength\savedwidth
+\newcommand\whline{\noalign{\global\savedwidth\arrayrulewidth
+                            \global\arrayrulewidth 2pt}%
+                   \hline
+                   \noalign{\global\arrayrulewidth\savedwidth}}
+\begin{document}
+\begin{figure}[htb]
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+
+     \color{title}IntelliJ IDEA Keymap for Max OS X\\
+     \begin{tabular}{a  b  a}
+        \multicolumn{3}{c}{\color{title}Edit 编辑}\\
+        \arrayrulecolor{l1}\whline
+        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
+        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
+        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
+     \end{tabular}
+
+  \end{minipage}%
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+
+     \color{title}IntelliJ IDEA Keymap for Max OS X\\
+     \begin{tabular}{a  b  a}
+        \multicolumn{3}{c}{\color{title}Edit 编辑}\\
+        \arrayrulecolor{l1}\whline
+        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
+        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
+        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
+     \end{tabular}
+
+  \end{minipage}%
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+
+     \color{title}IntelliJ IDEA Keymap for Max OS X\\
+     \begin{tabular}{a  b  a}
+        \multicolumn{3}{c}{\color{title}Edit 编辑}\\
+        \arrayrulecolor{l1}\whline
+        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
+        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
+        1 & 2 & 3\\ \arrayrulecolor{l2}\hline
+     \end{tabular}
+
+  \end{minipage}
+\end{figure}
+
+\end{document}
