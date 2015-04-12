@@ -25,6 +25,10 @@ img {
     margin-left: 20px;
 }
 
+img:hover {
+    cursor: pointer;
+}
+
 td {
     border-left: none;
     border-right: none;
