@@ -79,3 +79,7 @@ td {
 b {
     color: #f00;
 }
+
+tr.extra {
+    font-style: italic;
+}
